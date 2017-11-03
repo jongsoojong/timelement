@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Timer from './Timer.js';
-import DiceRoller from './DiceRoller.js';
+import diceRoller from './diceRoller.js';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
           <h1 className="App-title">Timelement is dope</h1>
         </header>
         <Timer/>
-        <DiceRoller/>
+        <diceRoller/>
       </div>
     );
   }

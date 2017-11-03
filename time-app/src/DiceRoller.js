@@ -40,11 +40,12 @@ class diceRoller extends Component{
 		return(
 			<div>
 			<h1>Le Excellent Dice Roller</h1>
-			<button type="button" onClick={this.d20}>D20</button>
+			<p> {this.state.rollResult}</p>
+			<button type="button" onClick={this.d20.bind(this)}>D20</button>
 			</div>
 			)
 
 	}
 }
 
-export default DiceRoller;
+export default diceRoller;
