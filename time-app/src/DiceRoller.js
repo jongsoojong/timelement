@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class diceRoller extends Component{
+class DiceRoller extends Component{
 	constructor (props){
 		super(props);
 		this.state = {rollResult : 0}
@@ -42,10 +42,15 @@ class diceRoller extends Component{
 			<h1>Le Excellent Dice Roller</h1>
 			<p> {this.state.rollResult}</p>
 			<button type="button" onClick={this.d20.bind(this)}>D20</button>
+			<button type="button" onClick={this.d12.bind(this)}>D12</button>
+			<button type="button" onClick={this.d10.bind(this)}>D10</button>
+			<button type="button" onClick={this.d8.bind(this)}>D8</button>
+			<button type="button" onClick={this.d6.bind(this)}>D6</button>
+			<button type="button" onClick={this.d4.bind(this)}>D4</button>
 			</div>
 			)
 
 	}
 }
 
-export default diceRoller;
+export default DiceRoller;
